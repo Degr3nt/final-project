@@ -1,0 +1,25 @@
+:root {
+  --bg: #fff;
+  color: var(--text);
+  background: var(--bg);
+}
+
+:root {
+--bg: #0d1014;
+}
+
+
+a[href], input[type='submit'], input[type='image'], label[for], select, button, .pointer {
+       cursor: pointer;
+}
+
+.fade {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.fade.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
