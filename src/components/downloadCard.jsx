@@ -1,3 +1,4 @@
+import {Link} from "react-router-dom"
 
 
 export function DownloadCard() {
@@ -21,11 +22,11 @@ export function DownloadCard() {
 
 function DownloadButton() {
     return (
-        <button className="absolute flex flex-row bg-white rounded-lg px-15 py-3 font-semibold text-lg items-center object-center justify-center self-center align-center transition-all duration-100 ease-in-out hover:border-4 hover:outline-3 outline-0 border-black outline-white gap-5">
+        <Link to="/download" className="absolute flex flex-row bg-white rounded-lg px-15 py-3 font-semibold text-lg items-center object-center justify-center self-center align-center transition-all duration-100 ease-in-out hover:border-4 hover:outline-3 outline-0 border-black outline-white gap-5">
             <svg viewBox="0 0 88 88" xmlns="http://www.w3.org/2000/svg" height="28" width="28">
                     <path d="m0 12.402 35.687-4.86.016 34.423-35.67.203zm35.67 33.529.028 34.453L.028 75.48.026 45.7zm4.326-39.025L87.314 0v41.527l-47.318.376zm47.329 39.349-.011 41.34-47.318-6.678-.066-34.739z" fill="currentColor"></path>
                 </svg>
                     Download for windows
-        </button>
+        </Link>
     )
 }

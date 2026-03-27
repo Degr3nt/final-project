@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import vscLogo from '../../assets/logo.png'
 import { DownloadButton } from './downloadButton'
 import { ExpandedSearchBar } from './expandedSearchBar'
@@ -56,15 +57,10 @@ function HeaderButton({title}) {
 }
 
 function Logo() {
-
-    function handleClick() {
-        window.location.reload()
-    }
-
     return (
-        <button className='flex flex-row gap-4 items-center justify-center' onClick={handleClick}>
+        <Link to='/' className='flex flex-row gap-4 items-center justify-center'>
             <img src={vscLogo} className="base" width="30" height="30" alt="" />
             <span className='text-lg font-semibold text-nowrap'>Visual Studio Code</span>
-        </button>
+        </Link>
     )
 }
