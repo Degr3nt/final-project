@@ -6,6 +6,7 @@ import { DownloadCard } from '../components/downloadCard.jsx'
 import { FeatureList } from '../components/features/featureList.jsx'
 import { ActionGrid } from '../components/actions/actionGrid.jsx'
 import { Footer } from '../components/footer/footer.jsx'
+import { DatabaseContent } from '../components/databaseContent.jsx'
 
 function HomePage() {
   const [search, setSearch] = useState(false)

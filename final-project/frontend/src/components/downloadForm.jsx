@@ -10,6 +10,7 @@ const registerSchema = z.object({
     path: ["agreement"],
   });
 
+
 export function DownloadForm() {
     const [formData, setFormData] = useState({
         email: "",
@@ -81,12 +82,12 @@ export function DownloadForm() {
         setLoading(true);
 
         try {
-            const response = await fetch("https://httpbin.org/post", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-            },
-            body: JSON.stringify(result.data),
+            const response = await fetch("/api/users", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(result.data),
             });
 
             const data = await response.json();
